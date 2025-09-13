@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 400px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #4a2fbd;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background-color: #4a2fbd;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background-color: #6139de;
+}
+.error {
+  color: #d0312d;
+  font-weight: 700;
+  margin-top: 15px;
+  text-align: center;
+}
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+.result a {
+  color: #4a2fbd;
+  font-weight: 700;
+  text-decoration: none;
+}
+.result a:hover {
+  text-decoration: underline;
+}
